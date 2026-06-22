@@ -14,20 +14,25 @@
       name="keywords"
       content="Ranjit Singh, Portfolio, Full Stack Developer, Data Science, Web Development"
     />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/todo.css" />
     <script src="./js/script.js" defer></script>
-    <title>About | Ranjit Singh</title>
+    <script src="./js/todo.js" defer></script>
+    <title>Home | Ranjit Singh</title>
   </head>
+
   <body>
     <header>
       <nav aria-label="Primary Navigation">
         <ul>
-          <li><a href="about.html" aria-current="page">About</a></li>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="skills.html">Skills</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li></li>
         </ul>
+
         <div class="theme-controls">
           <div class="theme-dots">
             <div class="theme-dot" data-theme="cyber" title="Cyber"></div>
@@ -43,46 +48,35 @@
     </header>
 
     <main>
-      <section>
-        <h1>About Me</h1>
-        <p>
-          I am a Computer Engineering student pursuing a B.Tech degree alongside
-          the IIT Madras BS Degree in Data Science and Applications. I am
-          passionate about software development, data science, and problem
-          solving. Through continuous learning and hands-on projects, I am
-          building the skills required to become a professional Full Stack
-          Developer.
-        </p>
-      </section>
+     <section class="todo-section">
+  <div class="todo-container">
 
-      <section>
-        <h2>My Journey</h2>
-        <p>
-          My interest in technology grew through competitive exam preparation
-          and programming. As I explored software development, I became
-          interested in web development, data science, and building practical
-          applications. I am currently strengthening my foundation in
-          programming, algorithms, and modern web technologies.
-        </p>
-      </section>
+    <h1 class="todo-title">
+      Task Manager
+    </h1>
 
-      <section>
-        <h2>Education</h2>
-        <ul>
-          <li>B.Tech in Computer Engineering</li>
-          <li>IIT Madras BS Degree in Data Science and Applications</li>
-        </ul>
-      </section>
+    <div class="input-group">
+      <input
+        type="text"
+        id="task-input"
+        placeholder="Enter a task..."
+      >
 
-      <section>
-        <h2>Goals</h2>
-        <ul>
-          <li>Become a Full Stack Developer</li>
-          <li>Master Data Science</li>
-          <li>Build Real-World Projects</li>
-          <li>Contribute to Open Source Software</li>
-        </ul>
-      </section>
+      <button id="add-btn">
+        Add Task
+      </button>
+    </div>
+
+    <div class="filters">
+      <button id="all-btn">All</button>
+      <button id="active-btn">Active</button>
+      <button id="completed-btn">Completed</button>
+    </div>
+
+    <ul id="task-list"></ul>
+
+  </div>
+</section>
     </main>
 
     <footer>

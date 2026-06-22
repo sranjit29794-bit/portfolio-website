@@ -14,7 +14,7 @@
       name="keywords"
       content="Ranjit Singh, Portfolio, Full Stack Developer, Data Science, Web Development"
     />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
     <title>Home | Ranjit Singh</title>
   </head>
@@ -28,35 +28,40 @@
           <li><a href="skills.html">Skills</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li>
-          </li>
+          <li></li>
         </ul>
-        
-        <button id="theme-toggle">
-          Toggle Theme
-        </button>
+
+        <div class="theme-controls">
+          <div class="theme-dots">
+            <div class="theme-dot" data-theme="cyber" title="Cyber"></div>
+            <div class="theme-dot" data-theme="dark" title="Dark"></div>
+            <div class="theme-dot" data-theme="ocean" title="Ocean"></div>
+            <div class="theme-dot" data-theme="forest" title="Forest"></div>
+            <div class="theme-dot" data-theme="sunset" title="Sunset"></div>
+            <div class="theme-dot" data-theme="mono" title="Mono"></div>
+          </div>
+          <button id="theme-toggle">⚡ Cyber</button>
+        </div>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-
         <div>
-        <h1>Ranjit Singh</h1>
-        <p>B.Tech Student</p>
-        <p>IITM BS Data Science Student</p>
-        <p>Aspiring Full Stack Developer</p>
+          <h1>Ranjit Singh</h1>
+          <p>B.Tech Student</p>
+          <p>IITM BS Data Science Student</p>
+          <p>Aspiring Full Stack Developer</p>
         </div>
 
         <div>
-        <img
-          src="./assets/images/images.jpg"
-          alt="Ranjit Singh logo"
-          width="200"
-          height="200"
-        />
+          <img
+            src="./assets/images/images.jpg"
+            alt="Ranjit Singh logo"
+            width="200"
+            height="200"
+          />
         </div>
-
       </section>
 
       <section>
@@ -92,33 +97,47 @@
         <h2>Featured Projects</h2>
 
         <section class="projects-grid">
-        <article>
-          <h3>Portfolio Website</h3>
-          <p>
-            A personal portfolio website built using semantic HTML5,
-            accessibility best practices, and SEO-friendly structure. This
-            project showcases my skills, learning journey, and future
-            development projects.
-          </p>
-        </article>
+          <article>
+            <h3>Advanced Todo Manager</h3>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">LocalStorage</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <p>
+              A task manager with filtering, completion tracking, persistent
+              storage, and smooth animations.
+            </p>
+            <a href="todo.html" class="card-link">Open App →</a>
+          </article>
+          
+          <article>
+            <h3>Portfolio Website</h3>
+            <p>
+              A personal portfolio website built using semantic HTML5,
+              accessibility best practices, and SEO-friendly structure. This
+              project showcases my skills, learning journey, and future
+              development projects.
+            </p>
+          </article>
 
-        <article>
-          <h3>Bank Management System</h3>
-          <p>
-            A C programming project that simulates banking operations such as
-            account creation, deposits, withdrawals, balance inquiries, and
-            customer record management using file handling concepts.
-          </p>
-        </article>
+          <article>
+            <h3>Bank Management System</h3>
+            <p>
+              A C programming project that simulates banking operations such as
+              account creation, deposits, withdrawals, balance inquiries, and
+              customer record management using file handling concepts.
+            </p>
+          </article>
 
-        <article>
-          <h3>DSA Practice Repository</h3>
-          <p>
-            A collection of C++ programs and problem-solving exercises covering
-            arrays, strings, functions, pointers, recursion, and fundamental
-            data structures and algorithms.
-          </p>
-        </article>
+          <article>
+            <h3>DSA Practice Repository</h3>
+            <p>
+              A collection of C++ programs and problem-solving exercises
+              covering arrays, strings, functions, pointers, recursion, and
+              fundamental data structures and algorithms.
+            </p>
+          </article>
         </section>
       </section>
     </main>

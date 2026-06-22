@@ -14,7 +14,7 @@
       name="keywords"
       content="Ranjit Singh, Portfolio, Full Stack Developer, Data Science, Web Development"
     />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
     <title>Projects |Ranjit Singh</title>
   </head>
@@ -28,9 +28,17 @@
           <li><a href="skills.html">Skills</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <button id="theme-toggle">
-          Toggle Theme
-        </button>
+        <div class="theme-controls">
+          <div class="theme-dots">
+            <div class="theme-dot" data-theme="cyber" title="Cyber"></div>
+            <div class="theme-dot" data-theme="dark" title="Dark"></div>
+            <div class="theme-dot" data-theme="ocean" title="Ocean"></div>
+            <div class="theme-dot" data-theme="forest" title="Forest"></div>
+            <div class="theme-dot" data-theme="sunset" title="Sunset"></div>
+            <div class="theme-dot" data-theme="mono" title="Mono"></div>
+          </div>
+          <button id="theme-toggle">⚡ Cyber</button>
+        </div>
       </nav>
     </header>
 
@@ -45,36 +53,49 @@
       </section>
 
       <section class="projects-grid">
-      <article>
-        <h2>Portfolio Website</h2>
-        <p>
-          A personal portfolio website developed using semantic HTML5 and
-          accessibility best practices. The website highlights my education,
-          skills, projects, and learning journey while following modern web
-          standards.
-        </p>
-      </article>
+        <article>
+          <h3>Advanced Todo Manager</h3>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">LocalStorage</span>
+            <span class="tag">CSS3</span>
+          </div>
+          <p>
+            A JavaScript-powered task manager featuring add, delete,
+            complete/undo, filter by All/Active/Completed, clear completed, live
+            task counter, and theme-aware styling with localStorage persistence.
+          </p>
+          <a href="todo.html" class="card-link">Open App →</a>
+        </article>
+        <article>
+          <h2>Portfolio Website</h2>
+          <p>
+            A personal portfolio website developed using semantic HTML5 and
+            accessibility best practices. The website highlights my education,
+            skills, projects, and learning journey while following modern web
+            standards.
+          </p>
+        </article>
 
-      <article>
-        <h2>Bank Management System</h2>
-        <p>
-          A C programming project that simulates core banking operations
-          including account creation, deposits, withdrawals, balance checks, and
-          customer record management. The project demonstrates file handling and
-          structured programming concepts.
-        </p>
-      </article>
+        <article>
+          <h2>Bank Management System</h2>
+          <p>
+            A C programming project that simulates core banking operations
+            including account creation, deposits, withdrawals, balance checks,
+            and customer record management. The project demonstrates file
+            handling and structured programming concepts.
+          </p>
+        </article>
 
-      <article>
-        <h2>DSA Practice Repository</h2>
-        <p>
-          A growing collection of C++ programs and algorithm practice exercises
-          covering arrays, strings, functions, pointers, recursion, and
-          fundamental data structures. This repository documents my progress in
-          problem solving and algorithmic thinking.
-        </p>
-      </article>
-
+        <article>
+          <h2>DSA Practice Repository</h2>
+          <p>
+            A growing collection of C++ programs and algorithm practice
+            exercises covering arrays, strings, functions, pointers, recursion,
+            and fundamental data structures. This repository documents my
+            progress in problem solving and algorithmic thinking.
+          </p>
+        </article>
       </section>
     </main>
 
